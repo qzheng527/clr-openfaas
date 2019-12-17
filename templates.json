@@ -1,0 +1,38 @@
+[
+    {
+        "template": "dockerfile-clearlinux",
+        "platform": "x86_64",
+        "language": "Dockerfile",
+        "source": "Clear Linux",
+        "description": "Clear Linux based Dockerfile template",
+        "repo": "https://github.com/qzheng527/clr-openfaas",
+        "official": "false"
+    },
+    {
+        "template": "go-clearlinux",
+        "platform": "x86_64",
+        "language": "Go",
+        "source": "Clear Linux",
+        "description": "Clear Linux based Golang template",
+        "repo": "https://github.com/qzheng527/clr-openfaas",
+        "official": "false"
+    },
+    {
+        "template": "node-clearlinux",
+        "platform": "x86_64",
+        "language": "NodeJS",
+        "source": "Clear Linux",
+        "description": "Clear Linux based NodeJS template",
+        "repo": "https://github.com/qzheng527/clr-openfaas",
+        "official": "false"
+    },
+    {
+        "template": "python3-clearlinux",
+        "platform": "x86_64",
+        "language": "Python",
+        "source": "Clear Linux",
+        "description": "Clear Linux based Python 3 template",
+        "repo": "https://github.com/qzheng527/clr-openfaas",
+        "official": "false"
+    }
+]
