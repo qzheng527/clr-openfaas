@@ -10,60 +10,20 @@ Steps could refer to
 
 [OpenFaaS workshop](https://github.com/openfaas/workshop)
 
-### python3-clearlinux
-1.  mkdir test && cd test
-2.  `git clone https://gitlab.devtools.intel.com/zhengq/clearlinux-openfaas-template.git template`
-3.  `faas-cli new --lang python3-clearlinux hello-openfaas --prefix="<your-docker-username-here>"`
+### how to get template
+`faas-cli template pull https://github.com/qzheng527/clr-openfaas`
 
-    Files tree as below.
->  
-    ├── hello-openfaas
-    │   ├── bundles.txt
-    │   ├── handler.py
-    │   ├── helper_script.sh
-    │   ├── __init__.py
-    │   └── requirements.txt
-    ├── hello-openfaas.yml
-    └── template
+### templates how-to
 
-    *  Put the required python packages in the "requirements.txt".
-    For example,
+[dockerfile-clearlinux](./dockerfile-clearlinux/README.md)
 
-    `echo "redis" >> hello-openfaas/requirements.txt`
-    `echo "flask" >> hello-openfaas/requirements.txt`
-    *  Put the required Clear Linux bundles in the "bundles.txt".
-    For example,
+[go-clearlinux](./go-clearlinux/README.md)
 
-    `echo "openblas" >> hello-openfaas/bundles.txt`
-    `echo "wget" >> hello-openfaas/bundles.txt`
+[node-clearlinux](./node-clearlinux/README.md)
 
-    *  Put any initial/helper operation in the "help_script.sh"
+[numpy-mp](./numpy-mp/README.md)
 
-4.  `faas-cli up -f hello-openfaas.yml`
-
-    Then you can invoke your python function by OpenFaas UI or faas-cli.
-    
-### go-clearlinux
-1.  mkdir test && cd test
-2.  `git clone https://gitlab.devtools.intel.com/cle-dns/clearlinux-openfaas-template.git template`
-3.  `faas-cli new --lang go-clearlinux go-openfaas --prefix="<your-docker-username-here>"`
-
-    Files tree as below.
->  
-    ├── go-openfaas
-    │   ├── handler.go
-    ├── go-openfaas.yml
-    └── template
-
-
-    *  Put the required Clear Linux bundles in the "bundles.txt".
-    For example,
-
-    `echo "openblas" >> go-openfaas/bundles.txt`
-    `echo "wget" >> go-openfaas/bundles.txt`
-4.  `faas-cli up -f go-openfaas.yml`
-
-    Then you can invoke your go function by OpenFaas UI or faas-cli.
+[python3-clearlinux](./python3-clearlinux/README.md)
 
     
 ## Proxy and Clear Linux mirror
